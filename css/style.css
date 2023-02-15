@@ -1,0 +1,81 @@
+
+tr {
+    cursor: pointer;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.messageBtn {
+    background-color: #0686c2;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.blockBtn {
+    background-color: #A6A0A0;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.container .searchbox {
+    float: right;
+	border-right: none;   
+    cursor: pointer;
+}
+
+.container .searchbox img {   
+    width: 50px;
+    height: 50px; 
+}
+
+
+#chatIcon {
+    display: none;
+}
+
+
+table.playertable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;    
+}
+
+table.playertable th {
+	background:#b5cfd2;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.playertable td {
+	background:#fcfcfc;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+
+
+
