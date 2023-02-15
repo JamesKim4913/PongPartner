@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 
 
 
-
+// user sign up
 function signUp() { 
   //Declare an array
   let playersList = [];
@@ -48,6 +48,9 @@ function signUp() {
 
   //Set login user
   setLoginUser(userItem.username);  
+
+  // welcome message
+  greeting();
 
   // move page 
   goUrl("players.html");
@@ -95,4 +98,37 @@ function setLoginUser(loginUser) {
 // move page
 function goUrl(url) {
   location.href = url; 
+}
+
+
+// Welcome Greeting Message
+function greeting() {   
+
+  //Declare an array
+  let messageList = [];
+
+  let loginUser = document.getElementById("user_name").value;
+  let messageContent = "Welcome to Pongpartner! We hope you have a great day!";
+  let imgnumber = Math.floor(Math.random() * 7) + 1;
+
+  //Declare on object
+  let messageItem = {};
+  messageItem.from = "Admin";
+  messageItem.to = loginUser;
+  messageItem.content = messageContent;  
+  messageItem.imgnum = imgnumber;
+  messageItem.status = false;    
+  
+  //Check if there are items in localstroage
+  if (localStorage.getItem('messages')) {
+      //get the data
+      messageList = JSON.parse(localStorage.getItem('messages'));  
+  } 
+
+  //Pushes object to the array
+  messageList.push(messageItem);
+
+  //Push the whole array to LocalStorage
+  localStorage.setItem('messages', JSON.stringify(messageList));
+
 }

@@ -15,15 +15,9 @@ function displayLoginUser() {
 }
 
 // check login user
-function checkLoginUser() {
-    let referer = document.referrer;    
-   
+function checkLoginUser() {   
     let loginUser = getLoginUser();
-    if(loginUser != "") {
-        return loginUser;
-    } 
-    
-    if(referer == "") {
+    if(loginUser == "") {
         location.href = "/";
     } 
 }
