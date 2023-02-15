@@ -18,14 +18,14 @@ function displayLoginUser() {
 function checkLoginUser() {   
     let loginUser = getLoginUser();
     if(loginUser == "") {
-        location.href = "/index.html";
+        location.href = "index.html";
     } 
 }
 
 // logout
 function logout() {
     localStorage.removeItem('loginUser');
-    location.href = "/index.html";
+    location.href = "index.html";
 }
 
 
